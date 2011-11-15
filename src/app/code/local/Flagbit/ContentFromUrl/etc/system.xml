@@ -13,7 +13,7 @@
                     <fields>
                     	<contentfromurl translate="label">
                             <label>Content From Url</label>
-                            <frontend_model>cataloginventory/adminhtml_form_field_contentfromurl</frontend_model>
+                            <frontend_model>contentfromurl/adminhtml_form_field_contentfromurl</frontend_model>
                             <backend_model>cataloginventory/system_config_backend_minsaleqty</backend_model>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
