@@ -6,31 +6,37 @@
     </modules>
     
     <global>
-    	<block>
-    		<flagbit_contentfromurl>
+    	<blocks>
+    		<Flagbit_ContentFromUrl>
 				<class>Flagbit_ContentFromUrl_Block</class>
-			</flagbit_contentfromurl>
-    	</block>
+			</Flagbit_ContentFromUrl>
+    	</blocks>
+    	<models>
+    		<Flagbit_ContentFromUrl>
+    			<class>Flagbit_ContentFromUrl_Model</class>
+    		</Flagbit_ContentFromUrl>
+   		</models>
     </global>
+    
+
     
     <frontend>
 		<routers>
-			<flagbit_contentfromurl>
+			<Flagbit_ContentFromUrl>
 				<use>standard</use>
 				<args>
 					<module>Flagbit_ContentFromUrl</module>
 					<frontName>contentfromurl</frontName>
 				</args>
-			</flagbit_contentfromurl>
+			</Flagbit_ContentFromUrl>
 		</routers>
 	</frontend>
 	
     <default>
-    	<flagbit_contentfromurl>
+    	<Flagbit_ContentFromUrl>
     		<menu>
 				<urlshop_1>http://www.infinigate.de/index.php?id=5162&amp;type=98</urlshop_1>
-				
 			</menu>
-    	</flagbit_contentfromurl>
+    	</Flagbit_ContentFromUrl>
     </default>
  </config>
