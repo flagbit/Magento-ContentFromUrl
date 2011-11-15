@@ -12,7 +12,7 @@ class Flagbit_ContentFromUrl_Model_System_Config_Backend_Contentfromurl extends 
     protected function _afterLoad()
     {
         $value = $this->getValue();
-        $value = Mage::helper('cataloginventory/minsaleqty')->makeArrayFieldValue($value);
+        $value = Mage::helper('Flagbit_ContentFromUrl/contentFromUrl')->makeArrayFieldValue($value);
         $this->setValue($value);
     }
 
@@ -22,7 +22,7 @@ class Flagbit_ContentFromUrl_Model_System_Config_Backend_Contentfromurl extends 
     protected function _beforeSave()
     {
         $value = $this->getValue();
-        $value = Mage::helper('cataloginventory/minsaleqty')->makeStorableArrayFieldValue($value);
+        $value = Mage::helper('Flagbit_ContentFromUrl/contentFromUrl')->makeStorableArrayFieldValue($value);
         $this->setValue($value);
     }
 }

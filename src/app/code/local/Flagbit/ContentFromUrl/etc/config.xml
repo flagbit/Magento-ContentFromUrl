@@ -16,9 +16,12 @@
     			<class>Flagbit_ContentFromUrl_Model</class>
     		</Flagbit_ContentFromUrl>
    		</models>
+        <helpers>
+            <Flagbit_ContentFromUrl>
+                <class>Flagbit_ContentFromUrl_Helper</class>
+            </Flagbit_ContentFromUrl>
+        </helpers>   		
     </global>
-    
-
     
     <frontend>
 		<routers>
