@@ -10,7 +10,6 @@ class Flagbit_ContentFromUrl_Block_Content extends Mage_Core_Block_Abstract
 	 }
 	 
 	public function _toHtml()
-    {
-        return '';
+	{
     }
 }

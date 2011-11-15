@@ -1,7 +1,7 @@
 <?php
 class Flagbit_ContentFromUrl_Block_Adminhtml_Form_Field_Contentfromurl extends Mage_Adminhtml_Block_System_Config_Form_Field_Array_Abstract
 {
-/**
+    /**
      * @var Mage_CatalogInventory_Block_Adminhtml_Form_Field_Customergroup
      */
     protected $_groupRenderer;
@@ -31,15 +31,15 @@ class Flagbit_ContentFromUrl_Block_Adminhtml_Form_Field_Contentfromurl extends M
     protected function _prepareToRender()
     {
         $this->addColumn('language_group_id', array(
-            'label' => Mage::helper('customer')->__('Language Group'),
+            'label' => Mage::helper('Flagbit_ContentFromUrl')->__('Language Group'),
             'renderer' => $this->_getGroupRenderer(),
         ));
         $this->addColumn('url', array(
-            'label' => Mage::helper('customer')->__('Url'),
+            'label' => Mage::helper('Flagbit_ContentFromUrl')->__('Url'),
             'style' => 'width:300px',
         ));
         $this->_addAfter = false;
-        $this->_addButtonLabel = Mage::helper('cataloginventory')->__('Add Url');
+        $this->_addButtonLabel = Mage::helper('Flagbit_ContentFromUrl')->__('Add Url');
     }
 
     /**
