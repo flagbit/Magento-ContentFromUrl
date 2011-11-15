@@ -1,0 +1,36 @@
+<config>
+    <modules>
+        <Flagbit_ContentFromUrl>
+            <version>0.1.0</version>
+        </Flagbit_ContentFromUrl>
+    </modules>
+    
+    <global>
+    	<block>
+    		<flagbit_contentfromurl>
+				<class>Flagbit_ContentFromUrl_Block</class>
+			</flagbit_contentfromurl>
+    	</block>
+    </global>
+    
+    <frontend>
+		<routers>
+			<flagbit_contentfromurl>
+				<use>standard</use>
+				<args>
+					<module>Flagbit_ContentFromUrl</module>
+					<frontName>contentfromurl</frontName>
+				</args>
+			</flagbit_contentfromurl>
+		</routers>
+	</frontend>
+	
+    <default>
+    	<flagbit_contentfromurl>
+    		<menu>
+				<urlshop_1>http://www.infinigate.de/index.php?id=5162&amp;type=98</urlshop_1>
+				
+			</menu>
+    	</flagbit_contentfromurl>
+    </default>
+ </config>
