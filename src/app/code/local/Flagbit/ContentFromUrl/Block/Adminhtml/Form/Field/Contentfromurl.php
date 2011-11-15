@@ -1,4 +1,4 @@
 <?php
-class Flagbit_ContentFromUrl_Block_Adminhtml_Form_Field_Comtentfromurl extends Mage_Adminhtml_Block_System_Config_Form_Field_Array_Abstract {
+class Flagbit_ContentFromUrl_Block_Adminhtml_Form_Field_Contentfromurl extends Mage_Adminhtml_Block_System_Config_Form_Field_Array_Abstract {
 	
 }
