@@ -118,8 +118,8 @@ class Flagbit_ContentFromUrl_Helper_Contentfromurl
         foreach ($value as $groupId => $qty) {
             $_id = Mage::helper('core')->uniqHash('_');
             $result[$_id] = array(
-                'customer_group_id' => $groupId,
-                'min_sale_qty' => $this->_fixQty($qty),
+                'language_group_id' => $this->_fixQty($qty),//$groupId,
+                'url' => $groupId,//$this->_fixQty($qty),
             );
         }
         return $result;
@@ -139,8 +139,8 @@ class Flagbit_ContentFromUrl_Helper_Contentfromurl
             if (!is_array($row) || !array_key_exists('customer_group_id', $row) || !array_key_exists('min_sale_qty', $row)) {
                 continue;
             }
-            $groupId = $row['customer_group_id'];
-            $qty = $this->_fixQty($row['min_sale_qty']);
+            $groupId = $row['language_group_id'];
+            $qty = $this->_fixQty($row['url']);
             $result[$groupId] = $qty;
         }
         return $result;
