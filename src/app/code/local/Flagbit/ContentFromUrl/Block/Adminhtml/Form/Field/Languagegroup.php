@@ -54,7 +54,6 @@ class Flagbit_ContentFromUrl_Block_Adminhtml_Form_Field_Languagegroup extends Ma
         $this->addOption(2, 'German');
         $this->addOption(3, 'French');
         
-        
     	/*if (!$this->getOptions()) {
             if ($this->_addGroupAllOption) {
                 $this->addOption(Mage_Customer_Model_Group::CUST_GROUP_ALL, Mage::helper('customer')->__('ALL GROUPS'));

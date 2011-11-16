@@ -15,9 +15,11 @@ class Flagbit_ContentFromUrl_Block_Adminhtml_Form_Field_Contentfromurl extends M
     {
         if (!$this->_groupRenderer) {
             $this->_groupRenderer = $this->getLayout()->createBlock(
-                'contentfromurl/adminhtml_form_field_languagegroup', '',
+                'Flagbit_ContentFromUrl/adminhtml_form_field_languagegroup', '',
                 array('is_render_to_js_template' => true)
             );
+            
+            
             $this->_groupRenderer->setClass('language_group_select');
             $this->_groupRenderer->setExtraParams('style="width:120px"');
         }
