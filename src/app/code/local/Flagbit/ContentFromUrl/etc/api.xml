@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <contentfromurl translate="title" module="flagbit_contentfromurl">
+                <model>flagbit_contentfromurl/api</model>
+                <title>Content from URL API</title>
+                <acl>customer</acl>
+                <methods>
+                    <clearcache translate="title" module="flagbit_contentfromurl">
+                        <title>clear Content from URL Cache</title>
+                        <method>clearcache</method>
+                        <acl>contentfromurl/clearcache</acl>
+                    </clearcache>
+                </methods>
+            </contentfromurl>
+        </resources>
+        <acl>
+            <resources>
+                <contentfromurl translate="title" module="flagbit_contentfromurl">
+                     <title>Content from URL</title>
+                     <sort_order>3</sort_order>
+                     <clearcache translate="title" module="flagbit_contentfromurl">
+                        <title>clear Cache</title>
+                     </clearcache>
+                </contentfromurl>
+            </resources>
+        </acl>
+    </api>
+</config>

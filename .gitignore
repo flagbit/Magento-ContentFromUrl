@@ -10,3 +10,7 @@ build.properties
 .settings/**/*
 .externalToolBuilders
 .externalToolBuilders/**/*
+.vagrant/.vagrant
+src/api.php
+src/test.php
+.vagrant/.vagrant

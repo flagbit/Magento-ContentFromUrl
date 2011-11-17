@@ -6,25 +6,23 @@
     </modules>
     
     <global>
-    	<block>
+    	<blocks>
     		<flagbit_contentfromurl>
 				<class>Flagbit_ContentFromUrl_Block</class>
 			</flagbit_contentfromurl>
-    	</block>
+    	</blocks>
+        <helpers>
+            <flagbit_contentfromurl>
+                <class>Flagbit_ContentFromUrl_Helper</class>
+            </flagbit_contentfromurl>
+        </helpers>
+        <models>
+            <flagbit_contentfromurl>
+                <class>Flagbit_ContentFromUrl_Model</class>
+            </flagbit_contentfromurl>
+        </models>    	
     </global>
     
-    <frontend>
-		<routers>
-			<flagbit_contentfromurl>
-				<use>standard</use>
-				<args>
-					<module>Flagbit_ContentFromUrl</module>
-					<frontName>contentfromurl</frontName>
-				</args>
-			</flagbit_contentfromurl>
-		</routers>
-	</frontend>
-	
     <default>
     	<flagbit_contentfromurl>
     		<menu>

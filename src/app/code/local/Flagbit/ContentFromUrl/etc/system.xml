@@ -13,12 +13,12 @@
                     <fields>
                     	<contentfromurl translate="label">
                             <label>Content From Url</label>
-                            <frontend_model>cataloginventory/adminhtml_form_field_contentfromurl</frontend_model>
-                            <backend_model>cataloginventory/system_config_backend_minsaleqty</backend_model>
+                            <frontend_model>flagbit_contentfromurl/adminhtml_form_field_urls</frontend_model>
+                            <backend_model>flagbit_contentfromurl/system_config_backend_urls</backend_model>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
-                            <show_in_store>0</show_in_store>
+                            <show_in_store>1</show_in_store>
                        </contentfromurl>
                     </fields>
                 </options>    
