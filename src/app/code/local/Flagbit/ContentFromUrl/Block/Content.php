@@ -25,16 +25,18 @@ class Flagbit_ContentFromUrl_Block_Content extends Mage_Core_Block_Abstract
 	public function _toHtml()
     {
         $output = '';
-        try{
-            $client = new Zend_Http_Client();
-            $client->setUri($this->_getUrl());
-            $client->setConfig(array('maxredirects'=>0, 'timeout'=>2));
-            $response = $client->request();
-            if($response instanceof Zend_Http_Response){
-                $output = $response->getBody();
+        if($this->_getUrl() !== NULL){
+            try{
+                $client = new Zend_Http_Client();
+                $client->setUri($this->_getUrl());
+                $client->setConfig(array('maxredirects'=>0, 'timeout'=>2));
+                $response = $client->request();
+                if($response instanceof Zend_Http_Response){
+                    $output = $response->getBody();
+                }
+            }catch (Exception $e){
+                $this->unsCacheLifetime();
             }
-        }catch (Exception $e){
-            $this->unsCacheLifetime();
         }
         return $output;
     }
