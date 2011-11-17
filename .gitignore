@@ -14,3 +14,4 @@ build.properties
 src/api.php
 src/test.php
 .vagrant/.vagrant
+.vagrant/.vagrant
